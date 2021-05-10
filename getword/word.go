@@ -31,7 +31,7 @@ func Handler() (string, error) {
 	myitem, err := GetData()
 
 	if err != nil {
-		return "Something went wrong!", err
+		return "ERROR de ejecucion: ", err
 	}
 
 	return myitem.Word, err
